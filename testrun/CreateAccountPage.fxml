@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.emojione.EmojiOneView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testrun.CreateAccountPageController">
+    <children>
+      <HBox prefHeight="50.0" prefWidth="1110.0" spacing="10.0" styleClass="menu_bg" stylesheets="@style.css">
+         <children>
+            <Button mnemonicParsing="false" onAction="#homeOnClick" prefHeight="50.0" prefWidth="92.0" styleClass="menubar-btn" stylesheets="@style.css" text="Home" textFill="#f1f4eb">
+               <graphic>
+                  <FontAwesomeIconView fill="#111010" glyphName="HOME" size="18.0" />
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#createAccountButtonOnclick" prefHeight="50.0" prefWidth="121.0" styleClass="menubar-btn" stylesheets="@style.css" text="Create Account" textFill="#f1f4eb">
+               <graphic>
+                  <FontAwesomeIconView fill="#2c2a2b" glyphName="USER" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#AdvancedWbuttonOnClick" prefHeight="50.0" prefWidth="130.0" styleClass="menubar-btn" stylesheets="@style.css" text="Advanced WD approval" textFill="#f1f4eb">
+               <graphic>
+                  <EmojiOneView fill="#282626" glyphName="MONEYBAG" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#LeaveAppButtonOnClick" prefHeight="50.0" prefWidth="121.0" styleClass="menubar-btn" stylesheets="@style.css" text="Leave Application" textFill="#f1f4eb">
+               <graphic>
+                  <MaterialIconView fx:id="LeaveAppButton" fill="#1e1e1d" glyphName="FONT_DOWNLOAD" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#AppoinmentButtonOnClick" prefHeight="50.0" prefWidth="120.0" styleClass="menubar-btn" stylesheets="@style.css" text="Appoinment" textFill="#f1f4eb">
+               <graphic>
+                  <MaterialDesignIconView fx:id="ApppoinmnetButton" fill="#2b2c29" glyphName="ACCOUNT_ALERT" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ViewreportButtonOnClick" prefHeight="50.0" prefWidth="117.0" styleClass="menubar-btn" stylesheets="@style.css" text="View Reports" textFill="#f1f4eb">
+               <graphic>
+                  <OctIconView fill="#0d0d0d" glyphName="FILE_PDF" size="18.0" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#EventAppButtonOnClick" prefHeight="50.0" prefWidth="113.0" styleClass="menubar-btn" stylesheets="@style.css" text="Event Approval" textFill="#f1f4eb">
+               <graphic>
+                  <MaterialIconView fill="#1e1e1d" glyphName="EVENT_AVAILABLE" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#budgetAppButtonOnClick" prefHeight="50.0" prefWidth="120.0" styleClass="menubar-btn" stylesheets="@style.css" text="Budget Approval" textFill="#f1f4eb">
+               <graphic>
+                  <EmojiOneView fill="#363434" glyphName="PENCIL" size="18.0" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#holidayButttonOnClick" prefHeight="50.0" prefWidth="124.0" styleClass="menubar-btn" stylesheets="@style.css" text="Holidays" textFill="#f1f4eb">
+               <graphic>
+                  <Icons525View fill="#111010" glyphName="CALENDAR" size="18" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="cAccountFeedback" layoutX="148.0" layoutY="58.0" prefHeight="561.0" prefWidth="721.0" styleClass="form_bg">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="17.0" prefHeight="38.0" prefWidth="242.0" text="Employee Account Form">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="162.0" layoutY="77.0" prefHeight="26.0" prefWidth="95.0" text="User Name:" />
+            <Label alignment="CENTER" layoutX="162.0" layoutY="113.0" prefHeight="26.0" prefWidth="95.0" text="Date of Birth:" />
+            <Label alignment="CENTER" layoutX="162.0" layoutY="147.0" prefHeight="26.0" prefWidth="95.0" text="Nid No:" />
+            <Label alignment="CENTER" layoutX="156.0" layoutY="181.0" prefHeight="26.0" prefWidth="95.0" text="Email:" />
+            <Label alignment="CENTER" layoutX="162.0" layoutY="213.0" prefHeight="26.0" prefWidth="95.0" text="Address:" />
+            <Label alignment="CENTER" layoutX="171.0" layoutY="245.0" prefHeight="26.0" prefWidth="95.0" text="Mobile No:" />
+            <Label alignment="CENTER" layoutX="171.0" layoutY="278.0" prefHeight="26.0" prefWidth="95.0" text="Date of Join:" />
+            <Label alignment="CENTER" layoutX="177.0" layoutY="312.0" prefHeight="26.0" prefWidth="95.0" text="Employee Type:" />
+            <TextField fx:id="idUname" alignment="CENTER" layoutX="286.0" layoutY="77.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idDob" alignment="CENTER" layoutX="286.0" layoutY="113.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idEmail" alignment="CENTER" layoutX="286.0" layoutY="181.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idAddress" alignment="CENTER" layoutX="286.0" layoutY="213.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idMobile" alignment="CENTER" layoutX="286.0" layoutY="245.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idDoj" alignment="CENTER" layoutX="286.0" layoutY="278.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idEmptype" alignment="CENTER" layoutX="286.0" layoutY="312.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idNid" alignment="CENTER" layoutX="286.0" layoutY="147.0" promptText="Please Fill this Field " />
+            <Button fx:id="submit" layoutX="498.0" layoutY="428.0" mnemonicParsing="false" onAction="#addEmployeeOnclick" prefHeight="25.0" prefWidth="95.0" text="Submit" />
+            <Label fx:id="cAccFeedback" alignment="CENTER" layoutX="71.0" layoutY="471.0" prefHeight="75.0" prefWidth="604.0" text="&quot;Please Fill all the required Field!!&quot;" textFill="#f05135">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="177.0" layoutY="347.0" prefHeight="26.0" prefWidth="95.0" text="EmpID" />
+            <Label alignment="CENTER" layoutX="177.0" layoutY="387.0" prefHeight="26.0" prefWidth="95.0" text="Password" />
+            <Label alignment="CENTER" layoutX="177.0" layoutY="427.0" prefHeight="26.0" prefWidth="95.0" text="Salary" />
+            <TextField fx:id="idSalary" alignment="CENTER" layoutX="287.0" layoutY="427.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idEmpPass" alignment="CENTER" layoutX="287.0" layoutY="387.0" promptText="Please Fill this Field " />
+            <TextField fx:id="idEmpID" alignment="CENTER" layoutX="287.0" layoutY="348.0" promptText="Must Be Unique" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
