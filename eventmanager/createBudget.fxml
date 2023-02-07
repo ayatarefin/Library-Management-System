@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eventmanager.CreateBudgetController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="156.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="108.0" text="Create Event" />
+            <Button layoutX="24.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="108.0" text="Create Budget" />
+            <Button layoutX="24.0" layoutY="127.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="108.0" text="Req Approval" />
+            <Button layoutX="24.0" layoutY="187.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="108.0" text="Create Guestlist" />
+            <Button layoutX="24.0" layoutY="243.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="108.0" text="withdraw budget" />
+            <Button layoutX="24.0" layoutY="295.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="108.0" text="Add Event" />
+            <Button layoutX="24.0" layoutY="351.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="108.0" text="Event Duties" />
+            <Button layoutX="24.0" layoutY="408.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="108.0" text="Event report" />
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="42.0" prefWidth="700.0" style="-fx-background-color: silver;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="239.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Budget">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Text>
+            <Button layoutX="634.0" layoutY="9.0" mnemonicParsing="false" text="Logout" />
+            <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#eventBackOnClick" text="Back" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="458.0" prefWidth="571.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea layoutX="156.0" layoutY="306.0" prefHeight="96.0" prefWidth="327.0" />
+            <TextField layoutX="112.0" layoutY="43.0" prefHeight="25.0" prefWidth="369.0" />
+            <DatePicker layoutX="112.0" layoutY="84.0" />
+            <DatePicker layoutX="112.0" layoutY="125.0" />
+            <Text layoutX="26.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Name" />
+            <Text layoutX="23.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting Date" />
+            <Text layoutX="26.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finishing Date" />
+            <Text layoutX="32.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expenditure Type" wrappingWidth="115.765625" />
+            <Button layoutX="414.0" layoutY="413.0" mnemonicParsing="false" text="Create" />
+            <TextField layoutX="112.0" layoutY="161.0" prefHeight="25.0" prefWidth="173.0" />
+            <Text layoutX="26.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget ID" />
+            <Text layoutX="31.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" />
+            <TextField layoutX="111.0" layoutY="194.0" prefHeight="25.0" prefWidth="173.0" promptText="Enter Amount" />
+            <TextField layoutX="110.0" layoutY="229.0" prefHeight="25.0" prefWidth="175.0" />
+            <Text layoutX="28.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event ID" wrappingWidth="59.845703125" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryassistant.SalaryDetailsController">
+   <right>
+      <AnchorPane prefHeight="458.0" prefWidth="546.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="145.0" layoutY="123.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="227.0" text="Wallet">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font></Button>
+            <Button layoutX="144.0" layoutY="270.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="228.0" text="Download Payroll Details" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="156.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="25.0" layoutY="41.0" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: white;" text="payroll days remaining" textFill="#514949">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="86.0" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: white;" text="Working Hours" textFill="#514949">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="132.0" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: white;" text="Bonus Earned" textFill="#514949">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="42.0" prefWidth="700.0" style="-fx-background-color: silver;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="245.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Salary Details">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Text>
+            <Button layoutX="623.0" layoutY="9.0" mnemonicParsing="false" onAction="#LogOutonClick" text="Log Out" />
+            <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#goToBackOnClick" text="Back" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

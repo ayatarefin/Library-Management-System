@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.emojione.EmojiOneView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="717.0" prefWidth="1110.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Accountant.ViewAdvancedWithdrawalReqSceneController">
+        
+    <children>
+        <HBox prefHeight="50.0" prefWidth="1110.0" spacing="10.0" styleClass="menu_bg" stylesheets="@style.css">
+          <children>
+            <Button mnemonicParsing="false" onAction="#homeOnClick" prefHeight="50.0" prefWidth="92.0" styleClass="menubar-btn" stylesheets="@style.css" text="Home" textFill="#f1f4eb">
+               <graphic>
+                  <FontAwesomeIconView fill="#111010" glyphName="HOME" size="18.0" />
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#payrollButtonOnclick" prefHeight="50.0" prefWidth="121.0" styleClass="menubar-btn" stylesheets="@style.css" text="Payroll Report" textFill="#f1f4eb">
+               <graphic>
+                  <FontAwesomeIconView fill="#2c2a2b" glyphName="FILE_PDF" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#AdvancedWbuttonOnClick" prefHeight="50.0" prefWidth="130.0" styleClass="menubar-btn" stylesheets="@style.css" text="Advanced WD approval" textFill="#f1f4eb">
+               <graphic>
+                  <EmojiOneView fill="#282626" glyphName="MONEYBAG" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#LeaveAppButtonOnClick" prefHeight="50.0" prefWidth="121.0" styleClass="menubar-btn" stylesheets="@style.css" text="Leave Application" textFill="#f1f4eb">
+               <graphic>
+                  <MaterialIconView fx:id="LeaveAppButton" fill="#1e1e1d" glyphName="FONT_DOWNLOAD" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#fundButtonOnClick" prefHeight="50.0" prefWidth="120.0" styleClass="menubar-btn" stylesheets="@style.css" text="FundReport" textFill="#f1f4eb">
+               <graphic>
+                  <MaterialDesignIconView fx:id="ApppoinmnetButton" fill="#2b2c29" glyphName="FILE_PDF" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pieButtonOnClick" prefHeight="50.0" prefWidth="117.0" styleClass="menubar-btn" stylesheets="@style.css" text="PieChart" textFill="#f1f4eb">
+               <graphic>
+                  <OctIconView fill="#0d0d0d" glyphName="FILE_PDF" size="18.0" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#EventAppButtonOnClick" prefHeight="50.0" prefWidth="113.0" styleClass="menubar-btn" stylesheets="@style.css" text="Event" textFill="#f1f4eb">
+               <graphic>
+                  <MaterialIconView fill="#1e1e1d" glyphName="EVENT_AVAILABLE" size="18" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#budgetAppButtonOnClick" prefHeight="50.0" prefWidth="120.0" styleClass="menubar-btn" stylesheets="@style.css" text="Budget Approval" textFill="#f1f4eb">
+               <graphic>
+                  <EmojiOneView fill="#363434" glyphName="PENCIL" size="18.0" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#holidayButttonOnclick" prefHeight="50.0" prefWidth="124.0" styleClass="menubar-btn" stylesheets="@style.css" text="Holidays" textFill="#f1f4eb">
+               <graphic>
+                  <Icons525View fill="#111010" glyphName="CALENDAR" size="18" />
+               </graphic>
+            </Button>
+            <Button layoutX="873.0" layoutY="10.0" mnemonicParsing="false" onAction="#ACbudgetAppButtonOnClick" prefHeight="50.0" prefWidth="120.0" styleClass="menubar-btn" stylesheets="@style.css" text="viewAdSalary" textFill="#f1f4eb">
+               <graphic>
+                  <EmojiOneView fill="#363434" glyphName="PENCIL" size="18.0" />
+               </graphic>
+            </Button>
+         </children>
+  </HBox>
+      <TableView fx:id="VAtableView" layoutX="6.0" layoutY="102.0" prefHeight="592.0" prefWidth="454.0">
+         <columns>
+            <TableColumn fx:id="vEMPiD" prefWidth="98.0" text="EmployeeID" />
+            <TableColumn fx:id="wAvIEW" prefWidth="140.0" text="Withdrawal Amount" />
+            <TableColumn fx:id="DateTab" prefWidth="102.0" text="Date" />
+            <TableColumn fx:id="statusGet" prefWidth="119.0" text="Status" />
+         </columns>
+      </TableView>
+      <Label fx:id="DetailsShowLabel" alignment="CENTER" layoutX="540.0" layoutY="137.0" prefHeight="484.0" prefWidth="570.0" text="Details Show here" textFill="#cc6f21">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="635.0" layoutY="654.0" prefHeight="25.0" prefWidth="137.0" text="Feedback:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="913.0" layoutY="652.0" mnemonicParsing="false" onAction="#adDisapproveButtonOnClick" prefHeight="25.0" prefWidth="121.0" text="Disapprove">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="765.0" layoutY="652.0" mnemonicParsing="false" onAction="#adApproveButtonOnClick" prefHeight="25.0" prefWidth="121.0" text="Approve">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="ShowDetailsButton" layoutX="490.0" layoutY="655.0" mnemonicParsing="false" onAction="#adShowDetailsButtonOnClick" text="Show Details" />
+      
+    </children>
+    
+    
+</AnchorPane>

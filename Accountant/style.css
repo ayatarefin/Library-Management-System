@@ -1,0 +1,29 @@
+.menu_bg{
+    -fx-background-color: #05B5F7;
+}
+.main_body{
+    -fx-background-color:#F0F0F0;
+}
+.side_bar{
+
+    -fx-background-color: #2C312E;
+    -fx-border-color:#05B5F7;
+
+}
+.menubar-btn{
+    -fx-text-fill:#2C312E;
+    -fx-background-color: #2BC1F9;
+    -fx-border-color:#2C312E;
+}
+.menubar-btn:hover{
+    -fx-border-color:#2C312E;
+    -fx-border-width:1px 1px 3px 1px;
+    -fx-background-color:#EDF704;
+    -fx-text-fill:#2C312E;   
+}
+.form_bg{
+    -fx-border-color:#2C312E;
+    -fx-border-width:1px 1px 3px 1px;
+    -fx-background-color:#B6D0E4;
+    
+}
